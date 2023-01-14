@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #3A3A3A;
+    --magenta: #E02C6D;
+}
+
+/* ---------- Utilities ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    /* margin: 0 120px 100px 120px; */
+}
+
+main, .header{
+    margin: 0 120px;
+}
+/* ---------- Header styles ---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.top-icon{
+    font-size: 20px;
+}
+
+nav>ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/* Banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 133px;
+    padding: 20px 0 34px 0;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    padding-bottom: 16px;
+}
+.banner-description{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.prebook-btn{
+    background-color: var(--magenta);
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.banner-image{
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 475px;
+    width: 475px;
+    padding: 30px 30px 30px 5px;
+}
+
+.banner-image img{
+    width: 440px;
+    height: 414px;
+}
+/* ---------- Logo Section styles ---------- */
+main{
+    margin-bottom: 100px;
+}
+.logo-section{
+    padding: 25px;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(125, 125, 125, 0.1), rgba(199, 199, 199, 0.75), rgba(155, 155, 155, 0.1));
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 36px 0;
+}
+
+/* ---------- Popular Collection Styles ---------- */
+.popular-collection{
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0 100px 0;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 28px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.gear{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.gear-banner img{
+    width: 300px;
+    height: 256px;
+}
+
+.gear-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+.gear-price{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.gear-info{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.fa-star, .fa-star-half-stroke{
+    color: #FB8200;
+}
+
+.rating-no{
+    font-weight: 700;
+    font-size: 14px;
+   color: #5E6366;
+}
+
+.gear-description{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+
+}
+
+.see-more{
+    color: var(--magenta);
+    font-weight: 700;
+    font-size: 16px;   
+    padding-top: 50px;
+    text-align: right;
+}
+
+/* ---------- Featured products styles ---------- */
+.featured{
+    display: flex;
+    gap: 96px;
+    margin: 0 20px;
+}
+.featured-title{
+    color: #0A0826;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.featured-description{
+    color: #6C6C6C;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.join-now-btn{
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--magenta);
+    color: white;
+    padding: 10px 24px;
+    border: none;
+}
+/* ---------- Footer styles ---------- */
+.footer{
+    height: 33vh;
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 6px;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 6px;
+    color: #D9DBE1;
+}
+.social-media-container{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 11px;
+}
+.social-media a{
+    color: white;
+}
+
+/* ---------- Media Queries ---------- */
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    main, .header{
+        margin: 0 10px;
+    }
+    .banner{
+        text-align: center;
+    }
+    .banner-image {
+        display: none;
+    }
+    .logos{
+        flex-direction: col;
+        flex-wrap: wrap;
+    }
+}
+/* Tablet devices */
+@media only screen and (min-width:689px) and (max-width:992px){
+
+}
