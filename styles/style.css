@@ -248,6 +248,17 @@ hr{
 /* ---------- Media Queries ---------- */
 /* Mobile Devices */
 @media only screen and (max-width:688px){
+    nav{
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        list-style-type: none;
+        gap: 0;
+    }
     main, .header{
         margin: 0 10px;
     }
@@ -258,8 +269,16 @@ hr{
         display: none;
     }
     .logos{
-        flex-direction: col;
         flex-wrap: wrap;
+        gap: 30px;
+    }
+    .collection-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .featured{
+        flex-direction:column-reverse;
+        gap: 30px;
+        margin: 0 10px 50px 10px;
     }
 }
 /* Tablet devices */
